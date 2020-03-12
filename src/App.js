@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+// Components imports
+import JSXSample from './components/1-jsx';
+import FunctionalComponentSample from './components/2-functional-component';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>- REACT STUDY -</h1>
+      <hr />
+      <h3>JSX</h3>
+      <JSXSample />
+      <hr />
+      <h3>Functional Component</h3>
+      <FunctionalComponentSample />
     </div>
   );
-}
+};
 
 export default App;
