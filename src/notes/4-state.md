@@ -10,3 +10,4 @@ State:
 - is the single source of truth of the component. Its current state
 
 * If the state changes, the Component should change as well
+* Nowadays hooks is preferred over the use of class-based components

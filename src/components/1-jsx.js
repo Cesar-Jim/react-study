@@ -1,6 +1,6 @@
 import React from 'react';
 
-// A user object
+// An object
 const user = {
   name: 'Cesar',
   age: 23

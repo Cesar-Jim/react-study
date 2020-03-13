@@ -10,11 +10,10 @@ A functional component:
 
 * everything defined in the function's body is the render function which returns JSX in the end
 * defining React components and rendering them within each other makes Composition in React possible
-* Arrow functions inherit 'this' from their parent
-
-- STATELESS FUNCTIONAL components don't manage state and don't have any side-effects (like accessing the browser's local storage)
-
-- REACT HOOKS made it possible to have state in FUNCTIONAL COMPONENTS
+* arrow functions inherit 'this' from their parent
+* STATELESS FUNCTIONAL components don't manage state and don't have any side-effects (like accessing the browser's local storage)
+* REACT HOOKS made it possible to have state in FUNCTIONAL COMPONENTS
+* you can create or add as many functions inside the Functional Component as you want to act as explicit event handlers or to encapsulate other business logic
 
 ##### Example of a functional component
 

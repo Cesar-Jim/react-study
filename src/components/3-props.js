@@ -4,11 +4,21 @@ import React from 'react';
 function Newspaper() {
   const news = 'Coronavirus Hits Hard!';
   const newsTwo = 'The Oil Prices Battle';
+  const newsData = {
+    place: 'Mexico',
+    time: '2pm CDT',
+    reporter: 'Mike Smith'
+  };
 
   return (
     <div>
       <Headline value={news} />
       <HeadlineTwo value={newsTwo} />
+      <Footer
+        place={newsData.place}
+        time={newsData.time}
+        reporter={newsData.reporter}
+      />
     </div>
   );
 }
@@ -21,6 +31,15 @@ function Headline(props) {
 // Extract data by destructuring props
 function HeadlineTwo({ value }) {
   return <h2>{value}</h2>;
+}
+
+// Using the spread operator to pass props in a cleaner way
+function Footer({ place, time, reporter }) {
+  return (
+    <p>
+      {place}, {time} - by: {reporter}
+    </p>
+  );
 }
 
 export default Newspaper;
