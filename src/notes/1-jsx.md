@@ -1,20 +1,15 @@
 ##### Intro to JSX
 
-The expression:
+JSX:
 
-const element = <h1>Hello there</h1>;
+- is an expression like: const element = <h1>Hello there</h1>;
+- is a mix of HTML and JavaScript
+- is not understandable to any browser. Is neither a string nor HTML.
+- can reminds us as a template language but it also comes with the full power of JavaScript.
+- produces React elements!
+- is not mandatorily required to run React, but it is so helpful, that most people opt to use it.
 
-Is not understandable to any browser. Is neither a string nor HTML.
-
-That syntax is called JSX. It can remind us as a template languaje but it also comes with the full power of JavaScript.
-
-JSX produces React elements!
-
-In essence, React doesn't require using JSX, but it is so helpful, that most people opt to use it.
-
-The aforementioned expression, will get translated into:
-
-const element = React.createElement("h1", null, "Hello there");
+* The aforementioned expression, will get translated into: const element = React.createElement("h1", null, "Hello there");
 
 Where:
 h1 = the type of tag we want to add
