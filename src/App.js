@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // JSX
 import JSXSample from './components/1-jsx';
@@ -24,9 +24,24 @@ import OverridingFunctionSample from './components/8-overriding-functions';
 import AsyncFunctionSample from './components/9-async-functions';
 
 // CUSTOM EVENTS (passing data from child to parent)
-import CustomEvent from './components/10-custom-event';
+import CustomEventSample from './components/10-custom-event';
+
+// PROPS.CHILDREN
+import PropsChildrenSample from './components/11-children-prop';
+
+// PORTALS (MODAL EXAMPLE)
+import PortalModalSample from './components/12-portals';
 
 const App = () => {
+  let [visible, setVisible] = useState(false);
+
+  const show = () => {
+    setVisible((visible = true));
+  };
+  const hide = () => {
+    setVisible((visible = false));
+  };
+
   return (
     <div>
       <h1>- REACT STUDY -</h1>
@@ -59,7 +74,30 @@ const App = () => {
       <AsyncFunctionSample />
       <hr />
       <h3>Custom Event</h3>
-      <CustomEvent />
+      <CustomEventSample />
+      <hr />
+      <h3>Props.Children</h3>
+      <PropsChildrenSample>
+        <nav>
+          <a href='#'> Home | </a>
+          <a href='#'> About Us | </a>
+          <a href='#'> Contact </a>
+          <p>
+            Check the console to see what types of children are contained in
+            this component
+          </p>
+          <h3>Lorem ipsum dolor sit</h3>
+        </nav>
+      </PropsChildrenSample>
+      <hr />
+      <h3>Portals</h3>
+      <PortalModalSample visible={visible}>
+        <h1>Hello from a PORTAL! 👋🏻</h1>
+      </PortalModalSample>
+      <div>
+        <button onClick={show}>Show Modal</button>
+        <button onClick={hide}>Hide Modal</button>
+      </div>
       <hr />
     </div>
   );
