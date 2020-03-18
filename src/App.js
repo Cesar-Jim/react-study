@@ -32,7 +32,14 @@ import PropsChildrenSample from './components/11-children-prop';
 // PORTALS (MODAL EXAMPLE)
 import PortalModalSample from './components/12-portals';
 
+// OBJECT ITERATION
+import ObjectIteration from './components/13-object-iteration';
+
+// REFS
+import RefsSample from './components/14-refs';
+
 const App = () => {
+  // Begins block for PORTALS example
   let [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -41,6 +48,7 @@ const App = () => {
   const hide = () => {
     setVisible((visible = false));
   };
+  // Ends block for PORTALS example
 
   return (
     <div>
@@ -79,9 +87,9 @@ const App = () => {
       <h3>Props.Children</h3>
       <PropsChildrenSample>
         <nav>
-          <a href='#'> Home | </a>
-          <a href='#'> About Us | </a>
-          <a href='#'> Contact </a>
+          <a href='https://www.google.com'> Home | </a>
+          <a href='https://www.google.com'> About Us | </a>
+          <a href='https://www.google.com'> Contact </a>
           <p>
             Check the console to see what types of children are contained in
             this component
@@ -92,12 +100,23 @@ const App = () => {
       <hr />
       <h3>Portals</h3>
       <PortalModalSample visible={visible}>
-        <h1>Hello from a PORTAL! 👋🏻</h1>
+        <h1>
+          Hello from a PORTAL!{' '}
+          <span role='img' aria-label='Emoji'>
+            👋🏻
+          </span>
+        </h1>
       </PortalModalSample>
       <div>
         <button onClick={show}>Show Modal</button>
         <button onClick={hide}>Hide Modal</button>
       </div>
+      <hr />
+      <h3>Object Iteration</h3>
+      <ObjectIteration />
+      <hr />
+      <h3>Refs (using hooks (useRef))</h3>
+      <RefsSample />
       <hr />
     </div>
   );
