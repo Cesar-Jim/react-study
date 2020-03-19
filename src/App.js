@@ -38,6 +38,12 @@ import ObjectIteration from './components/13-object-iteration';
 // REFS
 import RefsSample from './components/14-refs';
 
+// API CALL USING FETCH
+import ApiCallFetchSample from './components/15-rest-api-call-fetch';
+
+// API CALL USING AXIOS
+import ApiCallAxiosSample from './components/16-rest-api-call-axios';
+
 const App = () => {
   // Begins block for PORTALS example
   let [visible, setVisible] = useState(false);
@@ -117,6 +123,11 @@ const App = () => {
       <hr />
       <h3>Refs (using hooks (useRef))</h3>
       <RefsSample />
+      <h3>API Call Using Fetch</h3>
+      <ApiCallFetchSample />
+      <hr />
+      <h3>API Call Using Axios</h3>
+      <ApiCallAxiosSample />
       <hr />
     </div>
   );
