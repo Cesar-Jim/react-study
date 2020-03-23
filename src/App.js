@@ -42,10 +42,28 @@ import RefsSample from './components/14-refs';
 import ApiCallFetchSample from './components/15-rest-api-call-fetch';
 
 // API CALL USING AXIOS
-import ApiCallAxiosSample from './components/16-rest-api-call-axios';
+//import ApiCallAxiosSample from './components/16-rest-api-call-axios';
 
 // PURE COMPONENT
 import PureComponentSample from './components/18-pure-component';
+
+// EVENT BUBBLING
+import EventBubblingSample from './components/19-event-bubbling';
+
+// PARENT COMPONENT
+import ParentComponentSample from './components/20-parent-component';
+
+// OBSERVER PATTERN
+import ObserverPatternSample from './components/21-observer-pattern';
+
+// REACT CONTEXT API
+import ContextAPISample from './components/22-react-context-pattern';
+
+// RENDER PROPS PATTERN
+import RenderPropsSample from './components/23-render-props-pattern';
+
+// HIGHER ORDER COMPONENT PATTERN
+import HOCPattern from './components/24-higher-order-components-pattern';
 
 const App = () => {
   // Begins block for PORTALS example
@@ -134,6 +152,24 @@ const App = () => {
       <hr />*/}
       <h3>Pure Component Using memo</h3>
       <PureComponentSample />
+      <hr />
+      <h3>Event Bubbling (anti-pattern & not good practice)</h3>
+      <EventBubblingSample />
+      <hr />
+      <h3>Parent Component Pattern (Communication between siblings)</h3>
+      <ParentComponentSample />
+      <hr />
+      <h3>Observer Pattern (Using the library "pubsub-js")</h3>
+      <ObserverPatternSample />
+      <hr />
+      <h3>Context API</h3>
+      <ContextAPISample />
+      <hr />
+      <h3>Render Props Pattern</h3>
+      <RenderPropsSample />
+      <hr />
+      <h3>Higher Order Components</h3>
+      <HOCPattern />
       <hr />
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState, memo } from 'react';
 
 const Counter = () => {
-  const [greeting, setGreeting] = useState('Hello React!');
+  const [setGreeting] = useState('Hello React!');
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
