@@ -44,6 +44,9 @@ import ApiCallFetchSample from './components/15-rest-api-call-fetch';
 // API CALL USING AXIOS
 import ApiCallAxiosSample from './components/16-rest-api-call-axios';
 
+// PURE COMPONENT
+import PureComponentSample from './components/18-pure-component';
+
 const App = () => {
   // Begins block for PORTALS example
   let [visible, setVisible] = useState(false);
@@ -126,8 +129,11 @@ const App = () => {
       <h3>API Call Using Fetch</h3>
       <ApiCallFetchSample />
       <hr />
-      <h3>API Call Using Axios</h3>
+      {/*<h3>API Call Using Axios</h3>
       <ApiCallAxiosSample />
+      <hr />*/}
+      <h3>Pure Component Using memo</h3>
+      <PureComponentSample />
       <hr />
     </div>
   );

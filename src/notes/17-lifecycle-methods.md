@@ -46,11 +46,21 @@ The most common are:
 - HTTP requests should be done inside this method
 - event listeners should also be used inside this method (shall be cleaned up after the component is unmounted)
 
-4. componentDidUpdate()
+4. shouldComponentUpdate()
+
+- acts like a switch that dictates if the component renders or not
+- usually used for performance reasons
+-
+
+5. componentDidUpdate()
 
 - it's the last method that gets executed in the update phase
 - it gets every time a component suffers an update
 - prevProps and prevState can be accessed in this method
 - this method is used to make subsequent API calls after the initial one made in componentDidMount()
 
-5. componentWillUnmount() - used to eliminate listeners or intervals
+6. componentWillUnmount() - used to eliminate listeners or intervals
+
+- executes in the unmount phase
+- ideal for cleaning intervals, event listeners, or cleaning something of the parent component.
+-
