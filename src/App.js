@@ -1,69 +1,69 @@
 import React, { useState } from 'react';
 
 // JSX
-import JSXSample from './components/1-jsx';
+import JSXSample from './components/Fundamentals/1-jsx';
 
 // FUNCTIONAL COMPONENTS
-import FunctionalComponentSample from './components/2-functional-component';
+import FunctionalComponentSample from './components/Fundamentals/2-functional-component';
 
 // PROPS
-import PropsSample from './components/3-props';
+import PropsSample from './components/Fundamentals/3-props';
 
 // STATE
-import ClassStateSample from './components/4-class-state';
-import PropertyInitializerStateSample from './components/5-property-initializer-state';
-import HooksStateSample from './components/6-hooks-state';
+import ClassStateSample from './components/Fundamentals/4-class-state';
+import PropertyInitializerStateSample from './components/Fundamentals/5-property-initializer-state';
+import HooksStateSample from './components/Fundamentals/6-hooks-state';
 
 // EVENT HANDLERS
-import EventHandlerSample from './components/7-event-handlers';
+import EventHandlerSample from './components/Fundamentals/7-event-handlers';
 
 // OVERRIDING FUNCTIONS
-import OverridingFunctionSample from './components/8-overriding-functions';
+import OverridingFunctionSample from './components/Fundamentals/8-overriding-functions';
 
 // ASYNC FUNCTIONS
-import AsyncFunctionSample from './components/9-async-functions';
+import AsyncFunctionSample from './components/Fundamentals/9-async-functions';
 
 // CUSTOM EVENTS (passing data from child to parent)
-import CustomEventSample from './components/10-custom-event';
+import CustomEventSample from './components/Fundamentals/10-custom-event';
 
 // PROPS.CHILDREN
-import PropsChildrenSample from './components/11-children-prop';
+import PropsChildrenSample from './components/Fundamentals/11-children-prop';
 
 // PORTALS (MODAL EXAMPLE)
-import PortalModalSample from './components/12-portals';
+import PortalModalSample from './components/Fundamentals/12-portals';
 
 // OBJECT ITERATION
-import ObjectIteration from './components/13-object-iteration';
+import ObjectIteration from './components/Fundamentals/13-object-iteration';
 
 // REFS
-import RefsSample from './components/14-refs';
+import RefsSample from './components/Fundamentals/14-refs';
 
 // API CALL USING FETCH
-import ApiCallFetchSample from './components/15-rest-api-call-fetch';
+import ApiCallFetchSample from './components/Fundamentals/15-rest-api-call-fetch';
 
 // API CALL USING AXIOS
 //import ApiCallAxiosSample from './components/16-rest-api-call-axios';
 
 // PURE COMPONENT
-import PureComponentSample from './components/18-pure-component';
+import PureComponentSample from './components/Fundamentals/18-pure-component';
 
 // EVENT BUBBLING
-import EventBubblingSample from './components/19-event-bubbling';
+import EventBubblingSample from './components/Fundamentals/19-event-bubbling';
 
 // PARENT COMPONENT
-import ParentComponentSample from './components/20-parent-component';
+import ParentComponentSample from './components/Patterns/20-parent-component';
 
 // OBSERVER PATTERN
-import ObserverPatternSample from './components/21-observer-pattern';
+import ObserverPatternSample from './components/Patterns/21-observer-pattern';
 
 // REACT CONTEXT API
-import ContextAPISample from './components/22-react-context-pattern';
+import ContextAPISample from './components/Patterns/22-react-context-pattern';
 
 // RENDER PROPS PATTERN
-import RenderPropsSample from './components/23-render-props-pattern';
+import RenderPropsSample from './components/Patterns/23-render-props-pattern';
 
 // HIGHER ORDER COMPONENT PATTERN
-import HOCPattern from './components/24-higher-order-components-pattern';
+import HOCPattern from './components/Patterns/24-higher-order-components-pattern';
 
 const App = () => {
   // Begins block for PORTALS example
