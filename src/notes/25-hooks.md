@@ -3,10 +3,10 @@
 Hooks:
 
 - were introduced in React 16.8 as a new feature
-- allow the creation of components based on functions with the functionality of a class-based component (handle & update state, the use of context for communications between components, simulate lifecycle methods)
+- allow the creation of components based on functions with the functionality of a class-based component (handle & update state, the use of context for communications between components, simulate life cycle methods)
 - don't work inside classes
 
-* Hooks are functions that let you “hook into” React state and lifecycle features from function components
+* Hooks are functions that let you “hook into” React state and life cycle features from function components
 * The use of hooks reduces the code base extension
 * Using hooks reduces complexity
 * Logic separation gets easier with hooks
@@ -20,7 +20,7 @@ useState:
 
 useEffect:
 
-- Emulates in some way lifecycles methods such as: componentDidMount(), componentDidUpdate(), componentWillUnmount()
+- Emulates in some way life cycles methods such as: componentDidMount(), componentDidUpdate(), componentWillUnmount()
 - An effect is anything that is not managed inside of React, like an event listener or an API REST call or a subscription
 - It is ASYNCHRONOUS
 - Gets executed AFTER the DOM is updated
@@ -41,7 +41,7 @@ useRef:
 - links or references elements of the DOM
 - refs provide a way to access DOM nodes or React elements
 - createRef returns a new ref on every render, while useRef returns the SAME ref each time
-- useRef can hold a value in its .current property and it can persist after the component rerenders
+- useRef can hold a value in its .current property and it can persist after the component re-renders
 
 useReducer:
 
@@ -61,10 +61,14 @@ useImperativeHandle:
 React.memo():
 
 - is a Higher Order Component
-- similar to the lifecycle method, shouldComponentUpdate()
+- similar to the life cycle method, shouldComponentUpdate()
 - improves the performance of our functional components
 - available since React 16.6
 - it is like memorizing or keeping information that will not change over time (concept of memoization)
-- premise: if a component doesn't change, it shouldn't rerender
+- premise: if a component doesn't change, it shouldn't re-render
 - React.memo() is ideal for big lists
 - care must be taken since this method will not see nested properties / objects
+
+useDebugValue():
+
+- Provides a way to tag our personalized hooks in order to easily find them inside React dev tools

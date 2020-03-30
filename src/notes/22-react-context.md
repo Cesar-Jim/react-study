@@ -8,3 +8,4 @@ React Context
 
 * It can be used on class and functional components
 * Any situation where you have to pass a prop through a component so it reaches another component somewhere down the tree is where Context API can be used.
+* For functional components the useContext hook can be used

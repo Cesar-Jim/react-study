@@ -6,7 +6,7 @@ const PortalModal = props => {
     width: '380px',
     height: '100px',
     position: 'absolute',
-    top: '80em',
+    top: '108.7em',
     left: '20em',
     background: 'red',
     opacity: '0.65',

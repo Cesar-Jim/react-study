@@ -5,10 +5,10 @@
 import React, { useState } from 'react';
 
 const Father = () => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState('from father');
 
-  const handler = name => {
-    setName(name);
+  const handler = message => {
+    setName(message);
   };
 
   return (
@@ -29,7 +29,7 @@ const Father = () => {
 
 const Son = props => {
   const clickHandler = () => {
-    props.onGreet('Cesar Jimenez');
+    props.onGreet('from Son!');
   };
 
   return (

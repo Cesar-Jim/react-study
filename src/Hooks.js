@@ -24,6 +24,12 @@ import UseImperativeHandleExample from './components/Hooks/32-useImperativeHandl
 // REACT.MEMO:
 import ReactMemoExample from './components/Hooks/33-reactMemo';
 
+// PERSONALIZED HOOKS:
+import PersonalizedHookExample from './components/Hooks/34-personalizedHook';
+
+// PERSONALIZED HTTP:
+import PersonalizedHTTPExample from './components/Hooks/35-personalizedHTTP';
+
 const Hooks = () => {
   return (
     <div>
@@ -52,6 +58,12 @@ const Hooks = () => {
       <hr />
       <h3>React.memo():</h3>
       <ReactMemoExample />
+      <hr />
+      <h3>Personalized Hook:</h3>
+      <PersonalizedHookExample />
+      <hr />
+      <h3>Personalized HTTP:</h3>
+      <PersonalizedHTTPExample />
       <hr />
     </div>
   );

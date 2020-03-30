@@ -33,7 +33,6 @@ function HeadlineTwo({ value }) {
   return <h2>{value}</h2>;
 }
 
-// Using the spread operator to pass props in a cleaner way
 function Footer({ place, time, reporter }) {
   return (
     <p>

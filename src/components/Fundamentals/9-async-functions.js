@@ -5,12 +5,12 @@ const Counter = () => {
 
   const handleIncrement = () =>
     setTimeout(() => {
-      setCount(currentCount => currentCount + 1); // callback function inside setCount state function to access the current state
+      setCount(count + 1);
     }, 1000);
 
   const handleDecrement = () =>
     setTimeout(() => {
-      setCount(currentCount => currentCount - 1);
+      setCount(count - 1);
     }, 1000);
 
   return (

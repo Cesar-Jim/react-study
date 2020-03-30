@@ -15,7 +15,7 @@ const App = () => {
     )
       .then(res => res.json())
       .then(data => setProducts(data.products));
-  }, [search]); // re-run this effect every time name changes
+  }, [search]); // re-run this effect every time name changes with a delay of 600ms
 
   const handleChange = e => {
     setName(e.target.value);

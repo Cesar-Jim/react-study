@@ -9,20 +9,21 @@ const Greet = () => {
         Click each button and see the output in the console. Button on the left
         has an overriding function{' '}
       </p>
-      <Button handleClick={sayHello} />
+      <Button handleClick={sayHello}>Overriding</Button>
       <Button />
     </div>
   );
 };
 
-const Button = ({ handleClick }) => (
-  <button onClick={handleClick}>Button</button>
+const Button = ({ handleClick, name, children }) => (
+  <button onClick={handleClick}>{children ? children : name}</button>
 );
 
 Button.defaultProps = {
   handleClick: () => {
     console.log('Default');
-  }
+  },
+  name: 'Default'
 };
 
 export default Greet;

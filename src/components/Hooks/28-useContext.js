@@ -1,6 +1,7 @@
 import React, { useState, useContext, createContext } from 'react';
 
 // {Provider, Consumer}
+// Create a context
 const MyContext = createContext();
 
 // Traditional CONTEXT CONSUMPTION:

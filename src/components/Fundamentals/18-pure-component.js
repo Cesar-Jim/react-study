@@ -1,7 +1,7 @@
 import React, { useState, memo } from 'react';
 
 const Counter = () => {
-  const [setGreeting] = useState('Hello React!');
+  const [greeting, setGreeting] = useState('Hello React!');
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
@@ -19,7 +19,7 @@ const Counter = () => {
       <input type='text' onChange={handleChange} />
 
       <Count count={count} />
-
+      <p>{greeting}</p>
       <button type='button' onClick={handleIncrement}>
         Increment
       </button>
