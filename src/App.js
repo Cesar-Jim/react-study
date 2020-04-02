@@ -65,6 +65,9 @@ import RenderPropsSample from './components/Patterns/23-render-props-pattern';
 // HIGHER ORDER COMPONENT PATTERN
 import HOCPattern from './components/Patterns/24-higher-order-components-pattern';
 
+// IMPLICIT COMPOSITION EXAMPLE
+import ImplicitCompositionExample from './components/Composition/Composition';
+
 const App = () => {
   // Begins block for PORTALS example
   let [visible, setVisible] = useState(false);
@@ -170,6 +173,9 @@ const App = () => {
       <hr />
       <h3>Higher Order Components</h3>
       <HOCPattern />
+      <hr />
+      <h3>Implicit Composition</h3>
+      <ImplicitCompositionExample />
       <hr />
     </div>
   );
