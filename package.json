@@ -5,8 +5,10 @@
   "dependencies": {
     "axios": "^0.19.2",
     "pubsub-js": "^1.8.0",
+    "query-string": "^6.11.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-spinners": "^0.8.1",
     "use-debounce": "^3.4.0"
